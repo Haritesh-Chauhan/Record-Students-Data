@@ -185,7 +185,7 @@ st.sidebar.info("💡 **Tip**: Fill all fields carefully!")
 # HOME PAGE
 if st.session_state.page == 'home':
     st.markdown("<h1 style='text-align: center;'>🎓 Welcome to AI Learning Portal</h1>", unsafe_allow_html=True)
-    st.markdown("<h3 style='text-align: center; color: #f0f0f0;'>Chauhan Sir's Class</h3>", unsafe_allow_html=True)
+    # st.markdown("<h3 style='text-align: center; color: #f0f0f0;'>Chauhan Sir's Class</h3>", unsafe_allow_html=True)
     
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
@@ -325,7 +325,7 @@ elif st.session_state.page == 'student':
         
         st.markdown("""
         <div class='success-box' style='margin-top: 2rem;'>
-            <div class='welcome-title'>🚀 Welcome to Chauhan Sir's Class</div>
+            <div class='welcome-title'>🚀 Welcome to Haritesh Chauhan Class</div>
             <div class='welcome-subtitle'>Let's Learn About AI! 🤖✨</div>
         </div>
         """, unsafe_allow_html=True)
@@ -391,4 +391,5 @@ elif st.session_state.page == 'teacher':
         if st.button("🚪 Logout", use_container_width=True):
             st.session_state.authenticated = False
             st.session_state.page = 'home'
+
             st.rerun()
